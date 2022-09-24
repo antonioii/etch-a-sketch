@@ -1,0 +1,4 @@
+header and footer: e4eefd
+plus and minus: 407a5d
+button: 68753f
+
