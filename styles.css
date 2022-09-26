@@ -23,7 +23,12 @@ body {
     margin: 0px;
     height: 100vh;
     /**/
-  }
+}
+
+body,
+body>* {
+    border: 2px solid red;
+}
 
 /*header and footer*/
 #header,
@@ -31,7 +36,12 @@ body {
     text-align: center;
     padding-bottom: 18px;
     font-family: "furoreregular", serif;
+    background-color: #e4eefd;
   }
+
+#footer {
+    margin-top: auto;
+}
 
 /*content area*/
 #content {
@@ -56,9 +66,43 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
-    border: 2px solid rebeccapurple;
+    /*border: 2px solid rebeccapurple;*/
 }
 
+/*Panel captions and plus-minus button*/
+.plusMinus {
+    margin: 5px;
+    background-color: #407a5d;
+    color: white;
+    font-weight: bolder;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.instructionsCaption,
+.toolsCaption {
+    display: flex;
+    align-items: flex-start;
+}
+
+.instructionsCaption>*,
+.toolsCaption>* {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*Instructions box*/
+.instructionsBox {
+    padding: 10px;
+    margin: 8px;
+    border: 2px dotted black;
+    text-align: center;
+}
+
+/*
 .rainbowContainer>*,
 .brushContainer>*,
 .colorContainer>*,
@@ -66,4 +110,4 @@ body {
 .clearContainer>* {
     width: 128px;
     border: 2px solid red;
-}
+}*/
