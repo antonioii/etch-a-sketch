@@ -23,11 +23,8 @@ body {
     margin: 0px;
     height: 100vh;
     /**/
-}
-
-body,
-body>* {
-    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
 }
 
 /*header and footer*/
@@ -45,12 +42,15 @@ body>* {
 
 /*content area*/
 #content {
+    flex: 1;
     display: flex;
 }
 
-.canvasBox,
+.canvasBox {
+    flex: 1 1 60%;
+}
 .panelsBox {
-    flex: 1 1 50%;
+    flex: 1 1 40%;
 }
 
 .instructionsCaption,
@@ -58,21 +58,10 @@ body>* {
     display: flex;
 }
 
-.rainbowContainer,
-.brushContainer,
-.colorContainer,
-.eraserContainer,
-.clearContainer {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    /*border: 2px solid rebeccapurple;*/
-}
-
 /*Panel captions and plus-minus button*/
 .plusMinus {
     margin: 5px;
-    background-color: #407a5d;
+    background-color: #71862a;
     color: white;
     font-weight: bolder;
     border-radius: 50%;
@@ -96,18 +85,88 @@ body>* {
 
 /*Instructions box*/
 .instructionsBox {
-    padding: 10px;
+    padding: 8px;
     margin: 8px;
     border: 2px dotted black;
     text-align: center;
 }
 
-/*
+/*Tools*/
+.rainbowContainer,
+.brushContainer,
+.colorContainer,
+.eraserContainer,
+.clearContainer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    /*border: 2px solid rebeccapurple;*/
+}
+
+img {
+    width: 30px;    
+}
+
+.brushImg {
+    width: 23px;
+}
+
+.colorCircle {
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
 .rainbowContainer>*,
 .brushContainer>*,
 .colorContainer>*,
 .eraserContainer>*,
 .clearContainer>* {
     width: 128px;
-    border: 2px solid red;
-}*/
+    flex: auto;
+    /*border: 2px solid red;*/
+}
+
+.rainbowImg,
+.colorImg,
+.eraserImg,
+.brushButtons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    transition: 100ms;
+}
+
+.rainbowImg>img:hover,
+.colorImg>div:hover,
+.eraserImg>img:hover,
+.brushButtons>img:hover {
+    transform: scale(1.5);
+} 
+
+.interrogation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.interrogation>* {
+    margin: 0px;
+    margin-right: auto;
+    background-color: rgb(241, 241, 75);
+}
+
+.clearButton>button {
+    transform: scale(1.5);
+}
+
+.clearButton>button:active {
+    background-color: red;
+}
+
+.clearButton>button {
+    background-color: #71862a;
+    color: white;
+}
