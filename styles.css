@@ -202,7 +202,7 @@ body {
         outline: 2px solid black;
     }
     
-    .canvaSquare {
+    .canvasColumn {
         background-color: rgb(185, 203, 218);
         row-gap: 0px;
     }
