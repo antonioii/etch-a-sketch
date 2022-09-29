@@ -11,7 +11,7 @@ function createCanvas(nOfSquares) {
     }
 }
 
-//number of squares inside the canvas
+//number of initial squares inside the canvas
 let nOfSquares = 4;
 
 //canvas board node
