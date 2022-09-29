@@ -5,16 +5,17 @@ function createCanvas(nOfSquares) {
         let newLine = document.createElement('div');
         newLine.textContent = '';
         newLine.classList.add('canvasLine');
-        newLine.style.setProperty('display',`flex`); 
+        newLine.style.setProperty('display',`flex`);
         newLine.style.setProperty('flex',`1 1 100%`); 
         canvas.appendChild(newLine);        
+        
         
         //create columns (based on the number of squasres for each line
         for(let j = 0; j<nOfSquares;j++) {
         let newColumn = document.createElement('div');
-        newColumn.textContent = 'X';
+        newColumn.textContent = 'x';
         newColumn.classList.add('canvasColumn');
-        newColumn.style.setProperty('flex',`1 1 100%`);
+        newColumn.style.setProperty('flex',`1 1 0`);
         newLine.appendChild(newColumn);
         }
     }
@@ -26,7 +27,7 @@ function deleteCanvasLines(){
     let lines = document.querySelectorAll('.canvasLine');
     //for each line taken, delete
     lines.forEach(line => {
-        console.log(canvas.removeChild(line));
+        canvas.removeChild(line);
     });
 }
 
