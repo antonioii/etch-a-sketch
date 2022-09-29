@@ -41,135 +41,151 @@ body {
 }
 
 /*content area*/
-#content {
-    flex: 1;
-    display: flex;
-}
+    #content {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.canvasBox {
-    flex: 1 1 60%;
-}
-.panelsBox {
-    flex: 1 1 40%;
-}
+    .canvasBox {
+        flex: 1 1 60%;
+    }
+    .panelsBox {
+        flex: 1 1 40%;
+    }
 
-.instructionsCaption,
-.toolsCaption {
-    display: flex;
-}
+    .instructionsCaption,
+    .toolsCaption {
+        display: flex;
+    }
+    /*Panel Area*/
+        /*Panel captions and plus-minus button*/
+        .plusMinusTools,
+        .plusMinusInstruction {
+            margin: 5px;
+            background-color: #71862a;
+            color: white;
+            font-weight: bolder;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            font-size: 18px;
+            text-align: center;
+        }
 
-/*Panel captions and plus-minus button*/
-.plusMinusTools,
-.plusMinusInstruction {
-    margin: 5px;
-    background-color: #71862a;
-    color: white;
-    font-weight: bolder;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    font-size: 18px;
-    text-align: center;
-}
+        .instructionsCaption,
+        .toolsCaption {
+            display: flex;
+            align-items: flex-start;
+        }
 
-.instructionsCaption,
-.toolsCaption {
-    display: flex;
-    align-items: flex-start;
-}
+        .instructionsCaption>*,
+        .toolsCaption>* {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
 
-.instructionsCaption>*,
-.toolsCaption>* {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+        /*Instructions box*/
+        .instructionsBox {
+            padding: 8px;
+            margin: 8px;
+            border: 2px dotted black;
+            text-align: center;
+        }
 
-/*Instructions box*/
-.instructionsBox {
-    padding: 8px;
-    margin: 8px;
-    border: 2px dotted black;
-    text-align: center;
-}
-
-/*Tools*/
+        /*Tools*/
 
 
-.rainbowContainer,
-.brushContainer,
-.colorContainer,
-.eraserContainer,
-.clearContainer {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    /*border: 2px solid rebeccapurple;*/
-}
+        .rainbowContainer,
+        .brushContainer,
+        .colorContainer,
+        .eraserContainer,
+        .clearContainer {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            /*border: 2px solid rebeccapurple;*/
+        }
 
-img {
-    width: 30px;    
-}
+        img {
+            width: 30px;    
+        }
 
-.brushImg {
-    width: 23px;
-}
+        .brushImg {
+            width: 23px;
+        }
 
-.colorCircle {
-    width: 21px;
-    height: 21px;
-    border-radius: 50%;
-    background-color: blue;
-}
+        .colorCircle {
+            width: 21px;
+            height: 21px;
+            border-radius: 50%;
+            background-color: blue;
+        }
 
-.rainbowContainer>*,
-.brushContainer>*,
-.colorContainer>*,
-.eraserContainer>*,
-.clearContainer>* {
-    width: 128px;
-    flex: auto;
-    /*border: 2px solid red;*/
-}
+        .rainbowContainer>*,
+        .brushContainer>*,
+        .colorContainer>*,
+        .eraserContainer>*,
+        .clearContainer>* {
+            width: 128px;
+            flex: auto;
+            /*border: 2px solid red;*/
+        }
 
-.rainbowImg,
-.colorImg,
-.eraserImg,
-.brushButtons {
-    display: flex;
-    justify-content: flex-end;
-    padding: 5px;
-    transition: 100ms;
-}
+        .rainbowImg,
+        .colorImg,
+        .eraserImg,
+        .brushButtons {
+            display: flex;
+            justify-content: flex-end;
+            padding: 5px;
+            transition: 100ms;
+        }
 
-.rainbowImg>img:hover,
-.colorImg>div:hover,
-.eraserImg>img:hover,
-.brushButtons>img:hover {
-    transform: scale(1.5);
-} 
+        .rainbowImg>img:hover,
+        .colorImg>div:hover,
+        .eraserImg>img:hover,
+        .brushButtons>img:hover {
+            transform: scale(1.5);
+        } 
 
-.interrogation {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0px;
-}
+        .interrogation {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 0px;
+        }
 
-.interrogation>* {
-    margin: 0px;
-    margin-right: auto;
-    background-color: rgb(241, 241, 75);
-}
+        .interrogation>* {
+            margin: 0px;
+            margin-right: auto;
+            background-color: rgb(241, 241, 75);
+        }
 
-.clearButton>button {
-    transform: scale(1.5);
-}
+        .clearButton>button {
+            transform: scale(1.5);
+        }
 
-.clearButton>button:active {
-    background-color: red;
-}
+        .clearButton>button:active {
+            background-color: red;
+        }
 
-.clearButton>button {
-    background-color: #71862a;
-    color: white;
-}
+        .clearButton>button {
+            background-color: #71862a;
+            color: white;
+        }
+    
+    /*Canvas Area*/
+    .canvasBoard {
+        margin-right: 10px;
+        flex: 1 1 100%;
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #71862a;
+    }
+    
+    .canvaSquare {
+        background-color: red;
+        row-gap: 0px;
+    }
