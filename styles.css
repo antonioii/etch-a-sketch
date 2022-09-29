@@ -37,6 +37,9 @@ body {
   }
 
 #footer {
+    font-size: small;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
     margin-top: auto;
 }
 
@@ -163,6 +166,7 @@ body {
         }
 
         .clearButton>button {
+            margin: 10px;
             transform: scale(1.5);
         }
 
@@ -184,6 +188,7 @@ body {
     .canvasSizeButton {
         background-color: #c5c5c5;
         margin-right: 10px;
+        margin-left: 10px;
     }
 
     .canvasCaption {
@@ -194,6 +199,7 @@ body {
 
     .canvasBoard {
         margin-right: 10px;
+        margin-left: 10px;
         flex: 0 1 100%;
         height: 400px;
         flex-wrap: wrap;
