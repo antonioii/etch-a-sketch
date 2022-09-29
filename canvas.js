@@ -4,16 +4,14 @@ function createCanvas(nOfSquares) {
         //create line based on the number of squares
         let newLine = document.createElement('div');
         newLine.textContent = '';
-        newLine.classList.add('canvasLine');
-        newLine.style.setProperty('display',`flex`);
-        newLine.style.setProperty('flex',`1 1 100%`); 
+        newLine.classList.add('canvasLine'); 
         canvas.appendChild(newLine);        
         
         
         //create columns (based on the number of squasres for each line
         for(let j = 0; j<nOfSquares;j++) {
         let newColumn = document.createElement('div');
-        newColumn.textContent = 'x';
+        newColumn.textContent = '';
         newColumn.classList.add('canvasColumn');
         newColumn.style.setProperty('flex',`1 1 0`);
         newLine.appendChild(newColumn);
