@@ -59,7 +59,8 @@ body {
 }
 
 /*Panel captions and plus-minus button*/
-.plusMinus {
+.plusMinusTools,
+.plusMinusInstruction {
     margin: 5px;
     background-color: #71862a;
     color: white;
@@ -92,6 +93,8 @@ body {
 }
 
 /*Tools*/
+
+
 .rainbowContainer,
 .brushContainer,
 .colorContainer,
