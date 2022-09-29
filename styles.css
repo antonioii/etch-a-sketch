@@ -176,6 +176,22 @@ body {
         }
     
     /*Canvas Area*/
+
+    .canvasCaption>h2 {
+        margin: 0px;
+    }
+
+    .canvasSizeButton {
+        background-color: #c5c5c5;
+        margin-right: 10px;
+    }
+
+    .canvasCaption {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
     .canvasBoard {
         margin-right: 10px;
         flex: 1 1 100%;
@@ -183,9 +199,11 @@ body {
         display: flex;
         flex-wrap: wrap;
         background-color: #71862a;
+        outline: 2px solid black;
     }
     
     .canvaSquare {
-        background-color: red;
+        background-color: rgb(185, 203, 218);
         row-gap: 0px;
     }
+
