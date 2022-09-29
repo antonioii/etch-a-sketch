@@ -37,9 +37,9 @@ let nOfSquares = 1;
 let sizeChoice = document.querySelector('select');
     //add an event listener change
 sizeChoice.addEventListener('change',() => {
-    //take the current state of the select tag options
+    //get the current state of the select tag options
     let select = document.getElementById('squareComposition');
-    //take its current value and store in a 'value' variable
+    //get its current value and store in a 'value' variable
     let value = select.options[select.selectedIndex].value;
     //use a regex to select only numbers in the value and assign it to the variable
     value = value.match(/[0-9]{1,2}/);
@@ -48,7 +48,9 @@ sizeChoice.addEventListener('change',() => {
     //delete the previous canvas lines
     deleteCanvasLines();
     //call the createCanvas function with the nOfSquares = value
-    createCanvas(value);    
+    createCanvas(value);
+    //update the paint function structure
+    paint();
 });
 
 //canvas board node
