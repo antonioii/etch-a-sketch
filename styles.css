@@ -207,3 +207,7 @@ body {
         row-gap: 0px;
     }
 
+    /*canvas action*/
+    .canvaSquare:hover {
+        background-color: rebeccapurple;
+    }

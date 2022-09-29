@@ -12,11 +12,12 @@ function createCanvas(nOfSquares) {
 }
 
 //number of initial squares inside the canvas
-let nOfSquares = 4;
+let nOfSquares = 64;
 
 //canvas board node
 let canvas = document.querySelector('.canvasBoard');
 
+//start the initial canvas sample
 createCanvas(nOfSquares);
 
 
