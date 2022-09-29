@@ -204,6 +204,7 @@ body {
     
     .canvasColumn {
         background-color: rgb(185, 203, 218);
+        outline: 2px solid red;
         row-gap: 0px;
     }
 
