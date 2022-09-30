@@ -30,7 +30,7 @@ function deleteCanvasLines(){
 }
 
 //number of initial squares inside the canvas
-let nOfSquares = 1;
+let nOfSquares = 64;
 
 //change the initial squares
     //take the select tag

@@ -218,8 +218,13 @@ body {
 
     .canvasColumn {
         background-color: rgb(185, 203, 218);
-        /*outline: 2px solid red;*/
         row-gap: 0px;
+        /*make the squares/rectangles unselectables*/
+        user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
     }
 
     /*canvas action*/
