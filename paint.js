@@ -1,5 +1,4 @@
 let inkColor = 'black';
-let pressed = 'false';
 
 function paint(){
     //take all the columns been currently been displayed, they represents the 'squares' inside the canvas
