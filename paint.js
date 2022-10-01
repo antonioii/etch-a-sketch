@@ -23,34 +23,12 @@ function paint(){
     });
 }
 
-/*
-
-//function to paint
-function paint(){
-    //take all the columns been currently been displayed, they represents the 'squares' inside the canvas
-    let columns = document.querySelectorAll('.canvasColumn');
-    //for each column taken, add an event listener
-    columns.forEach(square => { 
-        //a mousemove listener with the event.button of a left click inside it to capture the 'click and drag' drawing functionality   
-        square.addEventListener('mousemove', function(event) {
-            if(event.buttons == 1) {
-             event.preventDefault();           
-             square.style.setProperty('background-color',`${inkColor}`);           
-            }
-           });   
-    });
-}
-
-
-*/
-
-
 //call the paint function
 paint();
 
 
 //RAINBOW
-//rainbow button
+//rainbow button when pressed
 let rainbowBtnPressed = false;
 
 //random function
@@ -72,9 +50,8 @@ function randomColor(){
          )`
     )
 
-    //return a string with a random color, e.g rgb(000,000,000)
 }
-
+//rainbow button
 let rainbowBtn = document.querySelector('.rainbowImg');
 rainbowBtn.addEventListener('click',rainbowPaint);
   
