@@ -1,3 +1,8 @@
+//SET THE BACKGROUND COLOR OF THE CANVAS:
+let backgroundColor = 'rgb(185, 203, 218)';
+
+//SET THE SIZE OF THE CANVAS:
+
 function createCanvas(nOfSquares) {
     //make squares
     for(let i = 0; i<nOfSquares;i++){
