@@ -1,4 +1,4 @@
-//clear all
+//CLEARALL
 function clearCanvas(){
     let columns = document.querySelectorAll('.canvasColumn');
     columns.forEach(square => {
