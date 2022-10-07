@@ -185,10 +185,25 @@ body {
         margin: 0px;
     }
 
-    .canvasSizeButton {
+    .canvasButtons {
+        display: flex;
+        flex-wrap: wrap;
         background-color: #c5c5c5;
         margin-right: 10px;
         margin-left: 10px;
+    }
+
+    .canvasBtnText{
+        margin-right: 5px;
+    }
+
+    .canvasSizeButton,
+    .canvasBgColor {
+        display: flex;
+    }
+
+    .canvasBgColor {
+        margin-left: auto;
     }
 
     .canvasCaption {

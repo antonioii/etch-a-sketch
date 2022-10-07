@@ -126,17 +126,28 @@
 
         <div class="canvasCaption">
             <h2>Canvas</h2>
-            <div class="canvasSizeButton">
-                <label for="squareComposition">Choose the number of rectangles you want to use in your canvas:</label>
-                <select name="squareComposition" id="squareComposition">
-                    <option value="_1x1">1 x 1</option>
-                    <option value="_2x2">2 x 2</option>
-                    <option value="_4x4">4 x 4</option>
-                    <option value="_8x8">8 x 8</option>
-                    <option value="_16x16">16 x 16</option>
-                    <option value="_32x32">32 x 32</option>
-                </select>
-            </div>
+
+            <div class="canvasButtons">
+
+                <div class="canvasSizeButton">
+                    <label class="canvasBtnText" for="squareComposition">Choose the number of rectangles you want to use in your canvas:</label>
+                    <select name="squareComposition" id="squareComposition">
+                        <option value="_1x1">1 x 1</option>
+                        <option value="_2x2">2 x 2</option>
+                        <option value="_4x4">4 x 4</option>
+                        <option value="_8x8">8 x 8</option>
+                        <option value="_16x16">16 x 16</option>
+                        <option value="_32x32">32 x 32</option>
+                    </select>
+                </div>
+
+                <div class="canvasBgColor">
+                    <span class="canvasBtnText">Choose a background color: </span>
+                    <input type="color" id="canvasBgColor" value="#B9CBDA">
+                </div>
+    
+            </div>    
+
         </div>
         <div class="canvasBoard">
             

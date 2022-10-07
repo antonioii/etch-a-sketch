@@ -1,4 +1,11 @@
 //SET THE BACKGROUND COLOR OF THE CANVAS:
+let colorInput = document.querySelector('#canvasBgColor');
+colorInput.addEventListener('input',()=> {
+    let color = colorInput.value;
+    backgroundColor = color;
+    clearCanvas();
+});
+
 let backgroundColor = 'rgb(185, 203, 218)';
 
 //SET THE SIZE OF THE CANVAS:
