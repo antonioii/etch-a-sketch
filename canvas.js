@@ -68,6 +68,10 @@ sizeChoice.addEventListener('change',() => {
 //canvas board node
 let canvas = document.querySelector('.canvasBoard');
 
+//change the cursor icon
+canvas.style.setProperty('cursor', 'url(./imgs/cursor.png), auto');
+
+
 //start the initial canvas sample
 createCanvas(nOfSquares);
 

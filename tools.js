@@ -17,3 +17,9 @@ const CLEARALLBTN = document.querySelector('.clearallbtn');
 CLEARALLBTN.addEventListener('click', clearCanvas);
 
 //ERASER
+let eraserBtn = document.querySelector('.eraserImg');
+eraserBtn.addEventListener('click', () => {
+    inkColor = backgroundColor;
+    rainbowBtnPressed = false;
+    paint();
+});
