@@ -1,5 +1,13 @@
 //color used to make the paint
-let inkColor = 'black';
+let inkColor = 'blue';
+let inkColorBtnColor = document.querySelector('.colorCircle');
+
+let inkColorBtn = document.querySelector('#colorWheel');
+inkColorBtn.addEventListener('input', () => {
+    inkColor = inkColorBtn.value;
+    inkColorBtnColor.style.setProperty('background-color', `${inkColor}`);
+    paint();
+});
 
 //function to paint
 function paint(){

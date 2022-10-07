@@ -1,3 +1,9 @@
+//RAINBOW BUTTON
+    //is in paint.js
+
+//COLOR PICKER
+    //is in paint.js
+
 //CLEARALL
 function clearCanvas(){
     let columns = document.querySelectorAll('.canvasColumn');
@@ -9,3 +15,5 @@ function clearCanvas(){
 
 const CLEARALLBTN = document.querySelector('.clearallbtn');
 CLEARALLBTN.addEventListener('click', clearCanvas);
+
+//ERASER

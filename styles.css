@@ -118,6 +118,10 @@ body {
             width: 23px;
         }
 
+        #colorWheel {
+            opacity: 0;
+        }
+
         .colorCircle {
             width: 21px;
             height: 21px;
