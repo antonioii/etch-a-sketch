@@ -1,6 +1,25 @@
 //RAINBOW BUTTON
     //is in paint.js
 
+//PENCIL AND PAINT BRUSH BUTTONS
+let pencilBtn = false;
+let paintBrush = true;
+
+let pencilBtnPressed = document.querySelector('.pencilImg');
+pencilBtnPressed.addEventListener('click', () => {
+    pencilBtn = true;
+    paintBrush = false;
+
+});
+let paintBrushPressed = document.querySelector('.brushImg');
+paintBrushPressed.addEventListener('click', () => {
+    pencilBtn = false;
+    paintBrush = true;
+
+});
+
+
+
 //COLOR PICKER
     //is in paint.js
 

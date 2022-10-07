@@ -23,8 +23,30 @@ function paint(){
              if(rainbowBtnPressed){
                 inkColor = randomColor();
                 square.style.setProperty('background-color',`${inkColor}`);
+
+//snippet to opacity               
+                if(paintBrush){
+                    square.style.opacity = "1";
+                } else {
+                    let opacity = Number(square.style.opacity);
+                    square.style.opacity = (opacity >= 1? "1" : opacity + 0.1 + "")
+                }
+//
+
              } else {
-             square.style.setProperty('background-color',`${inkColor}`);  }   
+             square.style.setProperty('background-color',`${inkColor}`); 
+             
+ //snippet to opacity               
+ if(paintBrush){
+    square.style.opacity = "1";
+} else {
+    let opacity = Number(square.style.opacity);
+    square.style.opacity = (opacity >= 1? "1" : opacity + 0.1 + "")
+}
+//
+
+
+            }   
 
             }
            });   
