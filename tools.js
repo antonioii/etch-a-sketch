@@ -18,6 +18,14 @@ paintBrushPressed.addEventListener('click', () => {
 
 });
 
+function changeSaturation(square) {
+    if(paintBrush){
+        square.style.opacity = "1";
+    } else {
+        let opacity = Number(square.style.opacity);
+        square.style.opacity = (opacity >= 1? "1" : opacity + 0.1 + "")
+    }
+};
 
 
 //COLOR PICKER
@@ -29,7 +37,7 @@ function clearCanvas(){
     columns.forEach(square => {
         //set each square to the backgroundColor choosen
         square.style.setProperty('background-color',`${backgroundColor}`);
-        square.style.setProperty('opacity','0');
+       
 
     });
 }

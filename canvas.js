@@ -1,9 +1,12 @@
 //SET THE BACKGROUND COLOR OF THE CANVAS:
+let subCanvas = document.querySelector('.canvasBoard');
 let colorInput = document.querySelector('#canvasBgColor');
 colorInput.addEventListener('input',()=> {
     let color = colorInput.value;
     backgroundColor = color;
+    subCanvas.style.setProperty('background-color', `${backgroundColor}`);
     clearCanvas();
+    
 });
 
 let backgroundColor = 'rgb(185, 203, 218)';

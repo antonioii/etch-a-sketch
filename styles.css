@@ -224,7 +224,7 @@ body {
         flex-wrap: wrap;
         display: flex;
         flex-direction: column;
-        background-color: #71862a;
+        background-color: rgb(185, 203, 218);
         outline: 2px solid black;
     }
     
