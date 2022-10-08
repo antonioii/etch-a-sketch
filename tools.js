@@ -29,6 +29,8 @@ function clearCanvas(){
     columns.forEach(square => {
         //set each square to the backgroundColor choosen
         square.style.setProperty('background-color',`${backgroundColor}`);
+        square.style.setProperty('opacity','0');
+
     });
 }
 
