@@ -1,5 +1,38 @@
-//RAINBOW BUTTON
-    //is in paint.js
+//RAINBOW
+//rainbow button when pressed
+let rainbowBtnPressed = false;
+
+//random function
+function randomIntFromInterval(min, max) { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+//rainbow function
+function rainbowPaint() {
+    rainbowBtnPressed = true;
+}
+
+//color random
+function randomColor(){
+    return ( //rgb(r,g,b)
+    `rgb(${randomIntFromInterval(0,2)}${randomIntFromInterval(0,5)}${randomIntFromInterval(0,5)},
+         ${randomIntFromInterval(0,2)}${randomIntFromInterval(0,5)}${randomIntFromInterval(0,5)},
+         ${randomIntFromInterval(0,2)}${randomIntFromInterval(0,5)}${randomIntFromInterval(0,5)}
+         )`
+    )
+
+}
+//rainbow button
+let rainbowBtn = document.querySelector('.rainbowImg');
+rainbowBtn.addEventListener('click', () => {
+    if(rainbowBtnPressed) {
+        rainbowBtnPressed = false;
+    } else {
+        rainbowBtnPressed = true;
+        rainbowPaint();
+    }
+});
+  
 
 //PENCIL AND PAINT BRUSH BUTTONS
 let pencilBtn = false;
@@ -29,7 +62,7 @@ function changeSaturation(square) {
 
 
 //COLOR PICKER
-    //is in paint.js
+    //its functions and variables are inside paint.js
 
 //CLEARALL
 function clearCanvas(){
