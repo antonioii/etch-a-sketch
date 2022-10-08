@@ -18,17 +18,29 @@ function paint(){
         //a mousemove listener with the event.button of a left click inside it to capture the 'click and drag' drawing functionality   
         square.addEventListener('mousemove', function(event) {
             if(event.buttons == 1) {
-
              event.preventDefault(); //this cancel the event to propagate
-             if(rainbowBtnPressed){
-                inkColor = randomColor();
-                square.style.setProperty('background-color',`${inkColor}`);
-                changeSaturation(square);
 
+
+             if(eraserBtnPressed) {
+                square.style.setProperty('background-color',`${backgroundColor}`); 
+                changeSaturation(square);
+                
              } else {
-             square.style.setProperty('background-color',`${inkColor}`); 
-             changeSaturation(square);
-            }   
+
+                if(rainbowBtnPressed){
+                    inkColor = randomColor();
+                    square.style.setProperty('background-color',`${inkColor}`);
+                    changeSaturation(square);
+    
+                 } else {
+                 square.style.setProperty('background-color',`${inkColor}`); 
+                 changeSaturation(square);
+                }   
+    
+
+             }
+
+
 
             }
            });   
@@ -65,5 +77,12 @@ function randomColor(){
 }
 //rainbow button
 let rainbowBtn = document.querySelector('.rainbowImg');
-rainbowBtn.addEventListener('click',rainbowPaint);
+rainbowBtn.addEventListener('click', () => {
+    if(rainbowBtnPressed) {
+        rainbowBtnPressed = false;
+    } else {
+        rainbowBtnPressed = true;
+        rainbowPaint();
+    }
+});
   
