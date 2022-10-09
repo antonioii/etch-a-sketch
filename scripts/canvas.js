@@ -26,12 +26,14 @@ function createCanvas(nOfSquares) {
         //create columns (based on the number of squasres for each line
         for(let j = 0; j<nOfSquares;j++) {
         let newColumn = document.createElement('div');
+        newColumn.style.setProperty('background-color',`${backgroundColor}`);
         newColumn.textContent = '';
         newColumn.classList.add('canvasColumn');
         newColumn.style.setProperty('flex',`1 1 0`);
         newLine.appendChild(newColumn);
         }
-    }
+    };
+    
 
 }
 
