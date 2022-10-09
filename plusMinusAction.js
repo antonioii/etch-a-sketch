@@ -1,3 +1,4 @@
+//The minus and plus buttons variables and functions
 let instructionPlusMinusButton = document.querySelector('.plusMinusInstruction');
 let toolsPlusMinusButton = document.querySelector('.plusMinusTools');
 let instructionsBox = document.querySelector('.instructionsBox');
@@ -32,3 +33,8 @@ function showHideTools() {
 
 instructionPlusMinusButton.addEventListener('click', showHideInst);
 toolsPlusMinusButton.addEventListener('click', showHideTools);
+
+//start the initial display with tools hidden when the windows is loaded 
+window.addEventListener('load', () => {
+    showHideTools();
+});
