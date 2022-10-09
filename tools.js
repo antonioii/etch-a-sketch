@@ -27,8 +27,12 @@ let rainbowBtn = document.querySelector('.rainbowImg');
 rainbowBtn.addEventListener('click', () => {
     if(rainbowBtnPressed) {
         rainbowBtnPressed = false;
+        rainbowBtn.style.setProperty('transform','scale(1.0');
+        rainbowBtn.style.setProperty('justify-content','flex-end');
     } else {
         rainbowBtnPressed = true;
+        rainbowBtn.style.setProperty('transform','scale(1.5');
+        rainbowBtn.style.setProperty('justify-content','center');
         rainbowPaint();
     }
 });
@@ -41,13 +45,17 @@ let paintBrush = true;
 let pencilBtnPressed = document.querySelector('.pencilImg');
 pencilBtnPressed.addEventListener('click', () => {
     pencilBtn = true;
+    pencilBtnPressed.style.setProperty('transform','scale(1.5)');
     paintBrush = false;
+    paintBrushPressed.style.setProperty('transform','scale(1.0)');
 
 });
 let paintBrushPressed = document.querySelector('.brushImg');
 paintBrushPressed.addEventListener('click', () => {
     pencilBtn = false;
+    pencilBtnPressed.style.setProperty('transform','scale(1.0)');
     paintBrush = true;
+    paintBrushPressed.style.setProperty('transform','scale(1.5)');
 
 });
 
@@ -85,8 +93,12 @@ eraserBtn.addEventListener('click', () => {
     
     if(eraserBtnPressed) {
         eraserBtnPressed = false;
+        eraserBtn.style.setProperty('transform','scale(1.0)');
+        eraserBtn.style.setProperty('justify-content','flex-end');
     } else {
         eraserBtnPressed = true;
+        eraserBtn.style.setProperty('transform','scale(1.5)');
+        eraserBtn.style.setProperty('justify-content','center');
     };
 
 

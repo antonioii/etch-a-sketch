@@ -146,13 +146,17 @@ body {
             display: flex;
             justify-content: flex-end;
             padding: 5px;
+            margin-bottom: 10px;
             transition: 100ms;
         }
 
-        .rainbowImg>img:hover,
+        .brushImg {
+            transform: scale(1.5);
+        }
+
         .colorImg>div:hover,
         .eraserImg>img:hover,
-        .brushButtons>img:hover {
+        .rainbowImg>img:hover {
             transform: scale(1.5);
         } 
 
