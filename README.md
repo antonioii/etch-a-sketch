@@ -3,7 +3,7 @@
 My implementation of an Etch a Sketch (using HTML, CSS and JS) for [The Odin Project](https://theodinproject.com).
 The Odin Project is a self-taught course focused on full stack web development.  
 
-![ScreenShot](etch-a-sketch-layout.png)  
+![ScreenShot](etch-a-sketch.png)  
 
 An 'Etch A Sketch' is a mechanical drawing toy which you can create pixelated,
 or checkered-looking drawings using continuous lines. Learn more in this [wiki](https://en.wikipedia.org/wiki/Etch_A_Sketch).   
