@@ -23,20 +23,16 @@ I also add some extra features:
    
 ---
 
-## Some more features which changes the initial concept of a simple Etch A Sketch:
+## Some more features and modifications:
 
 1. The first idea was to use squares in order to compose the canvas, but using
 rectangles had a more interesting final aesthetics in my opinion. To change it
 back to squares, we could just assing a fix value to the 'canvasboard' width
-and height with CSS.
+and height with CSS.  
 2. Usually, an etch a sketch do not allow pauses between drawing lines, but in
 order to make complex drawings easier to make and thus make it more fun, I add
 a function to allow drawings to be done through click-drag actions and not simples
-mouse moviment over the canvas.
-
----
-
-## Notes    
-
-* Due the lack of compatibility in many browsers, I prefered to use the "select tag" for the
-resize button, instead the "range input type".   
+mouse moviment over the canvas.  
+3. Due the lack of compatibility in many browsers, I prefered to use the "select tag" for the
+resize button (the button which let the user to choose how many squares/rectangles exists
+inside the canvas), instead of a "range input type".   
