@@ -107,7 +107,6 @@ body {
             display: flex;
             text-align: center;
             justify-content: center;
-            /*border: 2px solid rebeccapurple;*/
         }
 
         img {
@@ -136,7 +135,6 @@ body {
         .clearContainer>* {
             width: 128px;
             flex: auto;
-            /*border: 2px solid red;*/
         }
 
         .rainbowImg,
@@ -248,9 +246,4 @@ body {
         -khtml-user-select: none;
         -webkit-user-select: none;
         -o-user-select: none;
-    }
-
-    /*canvas action*/
-    .canvasColumn:hover {
-        background-color: rebeccapurple;
     }
